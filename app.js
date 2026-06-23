@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  window.addEventListener('popstate', () => {
+  window.addEventListener('hashchange', () => {
     handleUrlChange();
   });
 });
@@ -45,13 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Routing Navigation Engine
 function navigate(route) {
   const normalizedRoute = ROUTES[route] || 'home';
-  window.history.pushState({}, '', '/' + (normalizedRoute === 'home' ? '' : normalizedRoute));
-  loadView(normalizedRoute);
+  window.location.hash = '/' + normalizedRoute;
 }
 
 function handleUrlChange() {
-  const path = window.location.pathname.replace(/^\/|\/$/g, '');
-  const route = ROUTES[path] || 'home';
+  const hash = window.location.hash.replace(/^#\/?|\/$/g, '');
+  const route = ROUTES[hash] || 'home';
   loadView(route);
 }
 
