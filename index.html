@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEFENIQ | Cloud Solutions, Digital Products & Freelancer Ecosystem</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="DEFENIQ is a cloud-first technology company specializing in AWS Solutions, Custom Software, and niche platforms like SkillForge Marketplace and Freelancer Legal Toolkit.">
+  <meta name="keywords" content="AWS, Cloud Architecture, Freelancer Marketplace, Legal Documents, DevOps, Cybersecurity, Software Engineering, SaaS">
+  <meta name="author" content="DEFENIQ">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DEFENIQ | Cloud Solutions & Niche Ecosystems">
+  <meta property="og:description" content="Building intelligent digital platforms that empower modern professionals. Specializing in AWS Cloud Engineering and SaaS products.">
+  <meta property="og:image" content="logo.svg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="DEFENIQ | Cloud Solutions & Niche Ecosystems">
+  <meta property="twitter:description" content="Building intelligent digital platforms that empower modern professionals.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Dynamic Cloud Particle Network Background Layer -->
+  <div class="hero-canvas-container" id="hero-canvas-wrap" style="display:none;">
+    <canvas id="particle-canvas"></canvas>
+  </div>
+
+  <div class="app-container">
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-nav">
+      <div class="nav-brand" id="nav-logo-btn">
+        <img src="logo.svg" alt="DEFENIQ Logo" class="brand-logo">
+        <span>DEFENIQ</span>
+      </div>
+
+      <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><span class="nav-link" data-route="home">Home</span></li>
+        <li><span class="nav-link" data-route="about">About</span></li>
+        <li><span class="nav-link" data-route="services">Services</span></li>
+        <li><span class="nav-link" data-route="products">Products</span></li>
+        <li><span class="nav-link" data-route="demo">Platform Demo</span></li>
+        <li><span class="nav-link" data-route="technology">Technology</span></li>
+        <li><span class="nav-link" data-route="blog">Insights</span></li>
+        <li><span class="nav-link" data-route="careers">Careers</span></li>
+        <li><span class="nav-link" data-route="contact">Contact</span></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dynanically updated auth button (Login/Dashboard/Logout) -->
+        <div id="auth-nav-container">
+          <button class="btn btn-secondary" id="nav-auth-btn">Login</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Client-Side Routing Content Container -->
+    <main id="app">
+      <div style="display:flex; justify-content:center; align-items:center; height:60vh;">
+        <p>Loading DEFENIQ Ecosystem Platform...</p>
+      </div>
+    </main>
+
+    <!-- Corporate Footer -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>
+            <img src="logo.svg" alt="DEFENIQ Icon" class="footer-brand-logo">
+            DEFENIQ
+          </h4>
+          <p class="footer-desc">Building intelligent digital platforms and AWS-native architectures that empower modern professionals globally.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Ecosystem</h5>
+          <ul>
+            <li><a href="#" data-route="products">SkillForge Marketplace™</a></li>
+            <li><a href="#" data-route="products">Freelancer Legal Toolkit™</a></li>
+            <li><a href="#" data-route="demo">Platform Demo Sandbox</a></li>
+            <li><a href="#" data-route="technology">Ecosystem Stack</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#" data-route="about">Our Story</a></li>
+            <li><a href="#" data-route="services">Core Capabilities</a></li>
+            <li><a href="#" data-route="blog">Company Insights</a></li>
+            <li><a href="#" data-route="careers">Join Our Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Trust & Compliance</h5>
+          <ul>
+            <li><a href="#" data-route="contact">Submit RFQ</a></li>
+            <li><a href="#" data-route="home">Security Architecture</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DEFENIQ Inc. All rights reserved. Cloud Architecture Powered by AWS.</p>
+        <p>Zero-Trust Security Enabled</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-wrap"></div>
+
+  <!-- Core JavaScript Libraries -->
+  <script src="js/db.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/particle-bg.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

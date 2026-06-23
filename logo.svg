@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Primary Gradient (Electric Blue to Cyan Glow) -->
+    <linearGradient id="defeniq-grad" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#147DF5" />
+      <stop offset="100%" stop-color="#32D9FF" />
+    </linearGradient>
+    
+    <!-- Accent Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Network Connection Paths (Cloud Node Grid) -->
+  <path d="M25,50 L50,25 L75,50 M50,25 L50,75 M25,50 L75,50" stroke="url(#defeniq-grad)" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="2,2" />
+
+  <!-- Cloud Base Nodes -->
+  <circle cx="25" cy="50" r="3" fill="#32D9FF" opacity="0.6" />
+  <circle cx="75" cy="50" r="3" fill="#32D9FF" opacity="0.6" />
+  <circle cx="50" cy="25" r="3" fill="#147DF5" opacity="0.6" />
+  <circle cx="50" cy="75" r="3" fill="#147DF5" opacity="0.6" />
+
+  <!-- Stylized D + Cloud + Arrow Shape -->
+  <path d="M 28,20 
+           L 48,20 
+           A 30,30 0 0,1 78,50 
+           A 30,30 0 0,1 48,80 
+           L 28,80 
+           Z 
+           M 40,32 
+           L 40,68 
+           L 48,68 
+           A 18,18 0 0,0 66,50 
+           A 18,18 0 0,0 48,32 
+           Z" 
+        fill="url(#defeniq-grad)" 
+        filter="url(#glow)" />
+        
+  <!-- Growth Arrow integrated into the D -->
+  <path d="M 45,50 L 58,50 M 53,45 L 58,50 L 53,55" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
